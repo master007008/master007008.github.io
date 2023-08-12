@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WooHoo DS & EECS</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script>
+        var colors = ["white", , "beige", "black"];
+        var colorIndex = 0;
+        function changeColor() {
+            if( colorIndex >= colors.length ) {
+                colorIndex = 0;
+            }
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex++;
+        }
+    </script>
 <body>
+    <button class="button" onclick="changeColor();">change background color</button>
     <header>
         <h1><span class="red-text">My Name is: WooHoo DS & EECS</span></h1>
         <img src="ironmanvr.jpg" alt="Your Picture">
@@ -46,12 +59,14 @@
   
     </section>
    
-    <h2 class="red-text"> &nbsp Congrats! Let's play the song: Spirited Away  
+    <h3 class="red-text"> &nbsp Congrats! Let's play the song: Spirited Away  
          <audio src="SpiritedAway.mp3" controls> </audio> </h2>
 
 
     <footer>
         <p>&copy; 2023 WooHoo DS & EECS. All rights reserved.</p>
     </footer>
+
+</div>
 </body>
 </html>
